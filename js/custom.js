@@ -13,10 +13,10 @@ $(document).ready(function() {
         zeroRecords:    "Aucun &eacute;l&eacute;ment &agrave; afficher",
         emptyTable:     "Aucune donnée disponible dans le tableau",
         paginate: {
-            first:      "Premier",
-            previous:   "Pr&eacute;c&eacute;dent",
-            next:       "Suivant",
-            last:       "Dernier"
+            first:      "Primero",
+            previous:   "Anterior",
+            next:       "Siguiente",
+            last:       "Último"
         },
         aria: {
             sortAscending:  ": activer pour trier la colonne par ordre croissant",
