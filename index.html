@@ -1,939 +1,706 @@
 <!DOCTYPE html>
 <html lang="es">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<link rel="shortcut icon" href="images/favicon.png">
+<title>INE | Instito Nacional Electoral</title>
 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<!-- Bootstrap Core CSS -->
+<link href="utilidades/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="utilidades/bootstrap/css/dataTables.bootstrap.min.css" rel="stylesheet">
+<link href="utilidades/fontawesome/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+<link href="utilidades/animateit/animate.min.css" rel="stylesheet">
 
+<!-- Utilidades css -->
+<link href="utilidades/owlcarousel/owl.carousel.css" rel="stylesheet">
+<link href="utilidades/magnific-popup/magnific-popup.css" rel="stylesheet">
 
-        <link rel="shortcut icon" href="images/favicon.png">
-        <title>INE | Instito Nacional Electoral</title>
+<!-- Estilos css -->
+<link href="css/base-ine.css" rel="stylesheet">
+<link href="css/elementos-ine.css" rel="stylesheet">
+<link href="css/color-ine.css" rel="stylesheet">
+<link href="css/responsivo.css" rel="stylesheet">
+<link href="css/custom.css" rel="stylesheet" type="text/css" media="screen" />
 
-        <!-- Bootstrap Core CSS -->
-        <link href="utilidades/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <link href="utilidades/bootstrap/css/dataTables.bootstrap.min.css" rel="stylesheet">
-        <link href="utilidades/fontawesome/css/font-awesome.min.css" type="text/css" rel="stylesheet">
-        <link href="utilidades/animateit/animate.min.css" rel="stylesheet">
-
-        <!-- Utilidades css -->
-        <link href="utilidades/owlcarousel/owl.carousel.css" rel="stylesheet">
-        <link href="utilidades/magnific-popup/magnific-popup.css" rel="stylesheet">
-
-        <!-- Estilos css -->
-        <link href="css/base-ine.css" rel="stylesheet">
-        <link href="css/elementos-ine.css" rel="stylesheet">
-        <link href="css/color-ine.css" rel="stylesheet">
-        <link href="css/responsivo.css" rel="stylesheet">
-        <link href="css/custom.css" rel="stylesheet" type="text/css" media="screen" />
-        
-        <!--[if lt IE 9]>
+<!--[if lt IE 9]>
                     <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
             <![endif]-->
 
-        <!-- FUENTES GOOGLE -->
-        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,800,700,600%7CRaleway:100,300,600,700,800" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">
+<!-- FUENTES GOOGLE -->
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,800,700,600%7CRaleway:100,300,600,700,800" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">
 
+<!--UTILIDADES SCRIPT-->
+<script src="utilidades/jquery/jquery-1.11.2.min.js"></script>
+<script src="utilidades/plugins-compressed.js"></script>
+<script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.2/js/jquery.dataTables.js"></script>
+</head>
 
+<body class="wide">
 
-        <!--UTILIDADES SCRIPT-->
-        <script src="utilidades/jquery/jquery-1.11.2.min.js"></script>
-        <script src="utilidades/plugins-compressed.js"></script>
-        <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.2/js/jquery.dataTables.js"></script>
-
-
-    </head>
-
-    <body class="wide">
-
-
-        <!-- ENVOLVENTE -->
-        <div class="wrapper">
-            <!-- accesos rápidos -->
-            <div id="topbar" class="">
-                <div class="container">
-                    <div class="topbar-dropdown">
-                        <div class="title"><i class="fa fa-external-link-square"></i>Ir a INE.MX</div>
-                    </div>
-                    <div class="topbar-dropdown">
-                        <div class="title">Accesos rápidos <i class="fa fa-caret-down"></i></div>
-                        <div class="dropdown-list">
-                            <a class="list-entry" href="#">Obtener mi credencial</a>
-                            <a class="list-entry" href="#">Activar credencial</a>
-                            <a class="list-entry" href="#">Registrarme al padrón</a>
-                            <a class="list-entry" href="#">¿Cómo votar?</a>
-                            <a class="list-entry" href="#">Elecciones 2018</a>
-                            <a class="list-entry" href="#">Comisión del voto</a>
-                        </div>
-                    </div>
-
-                    <div class="hidden-xs">
-                        <div class="social-icons social-icons-colored-hover">
-                            <ul>
-                                <li class="social-facebook"><a href="https://www.facebook.com/INEMexico/" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                                <li class="social-twitter"><a href="https://twitter.com/INEMexico" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                                <li class="social-youtube"><a href="https://www.youtube.com/user/IFETV" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
-                                <li class="social-linkedin"><a href="contacto.html"><i class="fa fa-envelope"></i></a></li>
-                                <li class="social-rss"><a href="#"><i class="fa fa-rss"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <!-- /accesos rápidos -->
-
-            <!-- ENCABEZADO -->
-            <header id="header" class="">
-                <div id="header-wrap">
-                    <div class="container">
-
-                        <!--LOGO-->
-                        <div id="logo">
-                            <a href="index.html" class="logo" data-dark-logo="images/logo-dark.png">
-                                <img src="images/logo.png" alt="Logo INE">
-                            </a>
-                        </div>
-                        <!--/LOGO-->
-
-                        <!--MENU MOVIL -->
-                        <div class="nav-main-menu-responsive">
-                            <button class="lines-button x">
-                                <span class="lines"></span>
-                            </button>
-                        </div>
-                        <!--/MENU MOVIL -->
-
-                        <!--BUSCAR EN MENÚ -->
-                        <div id="top-search"> <a id="top-search-trigger"><i class="fa fa-search"></i><i class="fa fa-close"></i></a>
-                            <form action="search-results-page.html" method="get" data-toggle="validator">
-                                <input type="text" name="q" id="q" class="form-control" value="" placeholder="Palabra clave + presiona  &quot;Enter&quot;" required>
-                            </form>
-                        </div>
-                        <!--/BUSCAR EN MENÚ -->
-
-                        <!--MENU PRINCIPAL-->
-                        <div class="navbar-collapse collapse main-menu-collapse navigation-wrap">
-                            <div class="container">
-                                <nav id="mainMenu" class="main-menu mega-menu">
-                                    <ul class="main-menu nav nav-pills">
-                                        <li class="dropdown mega-menu-item"> <a href="#">Nosotros<i class="fa fa-angle-down"></i></a>
-                                            <ul class="dropdown-menu">
-                                                <li class="mega-menu-content" style="background-image: url('images/bg-menu.gif');">
-                                                    <div class="row">
-                                                        <div class="col-md-3">
-                                                            <ul>
-                                                                <li class="mega-menu-title">INE y el voto en el extranjero</li>
-                                                                <li> <a href="#">Información General</a> </li>
-                                                                <li> <a href="#">Marco Normativo</a> </li>
-                                                                <li> <a href="#">Reforma Electoral 2014</a> </li>
-                                                                <li> <a href="#">Sistema de Contacto</a> </li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="col-md-3">
-                                                            <ul>
-                                                                <li class="mega-menu-title">Comisión del Voto</li>
-                                                                <li> <a href="#">¿Qué es la Comisión?</a> </li>
-                                                                <li> <a href="#">Informes de la Comisión</a> </li>
-                                                                <li> <a href="#">Calendario de actividades</a> </li>
-                                                                <li> <a href="#">Contacto</a> </li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <ul>
-                                                                <li class="mega-menu-title">Histórico</li>
-                                                            </ul>
-                                                            <div class="col-md-6">
-                                                                <ul>
-                                                                    <li> <a href="#">Procesos electorales anteriores</a> </li>
-                                                                    <li> <a href="#">Atlas de resultados</a> </li>
-                                                                    <li> <a href="#">Evolución del voto en el extranjero</a> </li>
-                                                                    <li> <a href="#">Agradecimientos</a> </li>
-                                                                </ul>
-                                                            </div>
-                                                            <div class="col-md-6">
-                                                                <ul>
-                                                                    <li> &nbsp; </li>
-                                                                    <li> &nbsp; </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown mega-menu-item"> <a href="credencial.html">Credencial de Elector<i class="fa fa-angle-down"></i></a>
-                                            <ul class="dropdown-menu">
-                                                <li class="mega-menu-content" style="background-image: url('images/bg-menu.gif');">
-                                                    <div class="row">
-                                                        <div class="col-md-3">
-                                                            <ul>
-                                                                <li class="mega-menu-title">Solicitud de Credencial</li>
-                                                                <li> <a href="#">Conoce el proceso</a> </li>
-                                                                <li> <a href="#">Prepara tus papeles</a> </li>
-                                                                <li> <a href="#">Programa una cita</a> </li>
-                                                                <li> <a href="#">Consulta el estatus</a> </li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="col-md-3">
-                                                            <ul>
-                                                                <li class="mega-menu-title">Activa tu credencial</li>
-                                                                <li> <a href="#">Conoce el proceso</a> </li>
-                                                                <li> <a href="#">Activa tu credencial</a> </li>
-                                                                <li> <a href="#">Preguntas Frecuentes</a> </li>
-                                                                <li> <a href="#">Llama a INETel</a> </li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="col-md-3">
-                                                            <ul>
-                                                                <li class="mega-menu-title">Regístrate a la lista</li>
-                                                                <li> <a href="#">Conoce el trámite</a> </li>
-                                                                <li> <a href="#">Regístrate en línea</a> </li>
-                                                                <li> <a href="#">Elecciones 2018</a> </li>
-                                                                <li> <a href="#">Preguntas Frecuentes</a> </li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="col-md-3">
-                                                            <ul>
-                                                                <li class="mega-menu-title">Vota desde el extranjero</li>
-                                                                <li> <a href="#">Conoce el trámite</a> </li>
-                                                                <li> <a href="#">¿Cómo se vota?</a> </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown mega-menu-item"> <a href="credencial.html">Voto y Elecciones<i class="fa fa-angle-down"></i></a>
-                                            <ul class="dropdown-menu">
-                                                <li class="mega-menu-content" style="background-image: url('images/bg-menu.gif');">
-                                                    <div class="row">
-                                                        <div class="col-md-3">
-                                                            <ul>
-                                                                <li class="mega-menu-title">Proceso uno</li>
-                                                                <li> <a href="#">Conoce el proceso</a> </li>
-                                                                <li> <a href="#">Acceso uno</a> </li>
-                                                                <li> <a href="#">Acceso dos</a> </li>
-                                                                <li> <a href="#">Acceso tres</a> </li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="col-md-3">
-                                                            <ul>
-                                                                <li class="mega-menu-title">Proceso dos</li>
-                                                                <li> <a href="#">Conoce el proceso</a> </li>
-                                                                <li> <a href="#">Acceso uno</a> </li>
-                                                                <li> <a href="#">Acceso dos</a> </li>
-                                                                <li> <a href="#">Acceso tres</a> </li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <ul>
-                                                                <li class="mega-menu-title">Proceso tres</li>
-                                                            </ul>
-                                                            <div class="col-md-6">
-                                                                <ul>
-                                                                    <li> <a href="#">Conoce el proceso</a> </li>
-                                                                    <li> <a href="#">Acceso uno</a> </li>
-                                                                    <li> <a href="#">Acceso dos</a> </li>
-                                                                    <li> <a href="#">Acceso tres</a> </li>
-                                                                </ul>
-                                                            </div>
-                                                            <div class="col-md-6">
-                                                                <ul>
-                                                                    <li> &nbsp; </li>
-                                                                    <li> &nbsp; </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#">Promueve el voto</a></li>
-                                        <li><a href="#">Noticias</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                        <!--/MENU PRINCIPAL-->
-                    </div>
-                </div>
-            </header>
-            <!-- /NCABEZADO -->
-
-
-            <!-- ENCABEZADO BUSQUEDA -->
-            <section class="no-margin p-t-50 p-b-50" style="background-image:url(images/ine-credencial-elector.jpg)">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-5 col-sm-12">
-                            <h2 class="m-b-20 m-t-50 text-light">Votar desde el extranjero</h2>
-                            <p class="text-light">Aquí encontrarás información exclusiva sobre como obtener tu credencial de elector y participar desde el extranjero en las elecciones de México.</p>
-                            <div class="m-b-20">
-                                <form id="widget-subscribe-form" action="" role="form" method="post">
-                                    <div class="input-group input-group-lg">
-                                        <input type="email" aria-required="true" name="widget-subscribe-form-email" class="form-control required email" placeholder="Buscar en voto extranjero">
-                                        <span class="input-group-btn">
-                                            <button type="submit" id="widget-subscribe-submit-button" class="btn btn-primary">Buscar</button>
-                                        </span>
-                                    </div>
-                                </form>
-                            </div>
-                            <p class="text-light">Puedes encontrar enformación del INE en el sitio oficial</p>
-                        </div>
-                        <div class="col-md-6 col-md-offset-1 m-t-40">
-                            &nbsp;
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- /ENCABEZADO BUSQUEDA -->
-
-            <!-- ACCESIBILIDAD -->
-            <section class="background-grey no-margin no-padding">
-                <div class="container">
-                    <div class="row p-t-10 p-b-10">
-                        <div class="col-xs-6 col-sm-3">
-                            <div class="fa-hover text-center p-t-20 p-b-20"><i class="fa fa-calendar-check-o"></i> <a href="#" target="_blank">Programa tu cita</a></div>
-                        </div>
-                        <div class="col-xs-6 col-sm-3">
-                            <div class="fa-hover text-center p-t-20 p-b-20"><i class="fa fa-check-circle-o"></i> <a href="#">Activa tu credencial</a></div>
-                        </div>
-                        <div class="col-xs-6 col-sm-3">
-                            <div class="fa-hover text-center p-t-20 p-b-20"><i class="fa fa-edit"></i> <a href="#" target="_blank">Regístrate para votar</a></div>
-                        </div>
-                        <div class="col-xs-6 col-sm-3">
-                            <div class="fa-hover text-center p-t-20 p-b-20"><i class="fa fa-users"></i> <a href="#" target="_blank">Elecciones 2018</a></div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <hr class="no-margin">
-            <section class="no-margin no-padding">
-                <div class="container">
-                    
-            <!-- /ACCESIBILIDAD -->
-            <div class="jumbotron vertical-center">
-                <table id="tabla-datos-abiertos" class="table table-striped table-bordered" cellspacing="0">
-                    <thead>
-                        <tr>
-                            <th>Id</th>
-                            <th>Título</th>
-                            <th>Contenido</th>
-                            <th>Categoría</th>
-                            <th>Palabras Clave</th>
-                            <th>Formato</th>
-                            <th>Última Actualización</th>
-                            <th>Frecuencia Actualización</th>
-                            <th>Nombre Responsable</th>
-                            <th>Cargo</th>
-                            <th>Correo-e</th>
-                            <th>FUENTE</th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tfoot>
-                        <tr>
-                            <th>Id</th>
-                            <th>Título</th>
-                            <th>Contenido</th>
-                            <th>Categoría</th>
-                            <th>Palabras Clave</th>
-                            <th>Formato</th>
-                            <th>Última Actualización</th>
-                            <th>Frecuencia Actualización</th>
-                            <th>Nombre Responsable</th>
-                            <th>Cargo</th>
-                            <th>Correo-e</th>
-                            <th>FUENTE</th>
-                            <th></th>
-                        </tr>
-                    </tfoot>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Inventario de Cargos y Puestos</td>
-                            <td>Detalle de los Cargos y Puestos del Servicio Profesional Electoral Nacional</td>
-                            <td>Cargos y Puestos</td>
-                            <td>Catálogo</td>
-                            <td>
-                                <span class="dataset-format">
-                                    <a href="" download>xls</a>
-                                </span>
-                            </td>
-                            <td>30/08/2016</td>
-                            <td>Sin fecha fija</td>
-                            <td>Ricardo Urban</td>
-                            <td>Subdirector de Planeación y Evaluación SPEN</td>
-                            <td>ricardo.urban@ine.mx</td>
-                            <td>Consejo General del INE (fecha)</td>
-                            <td>Cargos y Puestos</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Estructura de plazas del Servicio Profesional Electoral Nacional INE</td>
-                            <td>Detalle de las plazas del sistema INE-SPEN</td>
-                            <td>Cargos y Puestos</td>
-                            <td>Plazas</td>
-                            <td>
-                                <span class="dataset-format">
-                                    <a href="" download>xls</a>
-                                </span>
-                            </td>
-                            <td></td>
-                            <td>Sin fecha fija</td>
-                            <td>Ricardo Urbán</td>
-                            <td>Subdirector de Planeación y Evaluación SPEN</td>
-                            <td>ricardo.urban@ine.mx</td>
-                            <td>Consejo General del INE (fecha)</td>
-                            <td>Cargos y Puestos</td>
-                        </tr>
-                        <tr>
-                            <td>3&nbsp;<span class="glyphicon glyphicon-eye-open"></span></td>
-                            <td>Plazas por función directiva o técnica</td>
-                            <td>Cantidad de plazas por función directiva o técnica</td>
-                            <td>Cargos y Puestos</td>
-                            <td>Plazas</td>
-                            <td>
-                                <span class="dataset-format">
-                                    <a href="" download>XLS</a>
-                                </span>
-                            </td>
-                            <td>30/05/2017</td>
-                            <td>Sin fecha fija</td>
-                            <td>Ricardo Urbán</td>
-                            <td>Subdirector de Planeación y Evaluación SPEN</td>
-                            <td>ricardo.urban@ine.mx</td>
-                            <td>Consejo General del INE (fecha)</td>
-                            <td>Cargos y Puestos</td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>Estructura ocupacional  de plazas Servicio Profesional Electoral Nacional OPLE</td>
-                            <td>Detalle de las plazas SPEN</td>
-                            <td>Cargos y Puestos</td>
-                            <td>Plazas</td>
-                            <td>
-                                <span class="dataset-format">
-                                    <a href="" download>xls</a>
-                                </span>
-                            </td>
-                            <td>16/06/2017</td>
-                            <td>Mensual</td>
-                            <td>Ricardo Urbán</td>
-                            <td>Subdirector de Planeación y Evaluación SPEN</td>
-                            <td>ricardo.urban@ine.mx</td>
-                            <td>Elaoración propia con base en la Junta General (fecha)</td>
-                            <td>Cargos y Puestos</td>
-                        </tr>
-                        <tr>
-                            <td>5&nbsp;<span class="glyphicon glyphicon-eye-open"></span></td>
-                            <td>Ocupación de plazas SPEN</td>
-                            <td>Detalle ocupación de plazas SPEN</td>
-                            <td>Cargos y Puestos</td>
-                            <td>Plazas</td>
-                            <td>
-                                <span class="dataset-format">
-                                    <a href="" download>Excel</a>
-                                </span>
-                            </td>
-                            <td>31/05/2017</td>
-                            <td>Sin fecha fija</td>
-                            <td>Alejandro Alarcón Mares</td>
-                            <td>Subdirector de Incorporación y Registro</td>
-                            <td>alejandro.alarcon@ine.mx</td>
-                            <td>Elaboración propia con base en diversos acuerdos de Junta General </td>
-                            <td>Cargos y Puestos</td>
-                        </tr>
-                        <tr>
-                            <td>6</td>
-                            <td>Nivel máximo de estudios de los miebros del SPEN-INE</td>
-                            <td>Detalle nivel máximo de estudios</td>
-                            <td>Cargos y Puestos</td>
-                            <td>Plazas</td>
-                            <td>
-                                <span class="dataset-format">
-                                    <a href="" download>Excel</a>
-                                </span>
-                            </td>
-                            <td>31/05/2017</td>
-                            <td>Sin fecha fija</td>
-                            <td>Alejandro Alarcón Mares</td>
-                            <td>Subdirector de Incorporación y Registro</td>
-                            <td>alejandro.alarcon@ine.mx</td>
-                            <td>Documentación entregada por MSPEN</td>
-                            <td>Cargos y Puestos</td>
-                        </tr>
-                        <tr>
-                            <td>7</td>
-                            <td>Miembros del SPEN clasificados por género</td>
-                            <td>Detalle de los MSPEN por género</td>
-                            <td>Cargos y Puestos</td>
-                            <td>Plazas</td>
-                            <td>
-                                <span class="dataset-format">
-                                    <a href="" download>Excel</a>
-                                </span>
-                            </td>
-                            <td>31/05/2017</td>
-                            <td>Sin fecha fija</td>
-                            <td>Alejandro Alarcón Mares</td>
-                            <td>Subdirector de Incorporación y Registro</td>
-                            <td>alejandro.alarcon@ine.mx</td>
-                            <td>Documentación entregada por MSPEN</td>
-                            <td>Cargos y Puestos</td>
-                        </tr>
-                        <tr>
-                            <td>8</td>
-                            <td>Miembros del SPEN clasificados por edad</td>
-                            <td>Detalle de los MSPEN por edad</td>
-                            <td>Cargos y Puestos</td>
-                            <td>Plazas</td>
-                            <td>
-                                <span class="dataset-format">
-                                    <a href="" download>Excel</a>
-                                </span>
-                            </td>
-                            <td>31/05/2017</td>
-                            <td>Sin fecha fija</td>
-                            <td>Alejandro Alarcón Mares</td>
-                            <td>Subdirector de Incorporación y Registro</td>
-                            <td>alejandro.alarcon@ine.mx</td>
-                            <td>Documentación entregada por MSPEN</td>
-                            <td>Cargos y Puestos</td>
-                        </tr>
-                        <tr>
-                            <td>9&nbsp;<span class="glyphicon glyphicon-eye-open"></span></td>
-                            <td>Antigüedad en el Servicio Profesional Electoral Nacional</td>
-                            <td>Detalle de antigüedad del SPEN</td>
-                            <td>Cargos y Puestos</td>
-                            <td>Plazas</td>
-                            <td>
-                                <span class="dataset-format">
-                                    <a href="" download>Excel</a>
-                                </span>
-                            </td>
-                            <td>31/05/2017</td>
-                            <td>Sin fecha fija</td>
-                            <td>Alejandro Alarcón Mares</td>
-                            <td>Subdirector de Incorporación y Registro</td>
-                            <td>alejandro.alarcon@ine.mx</td>
-                            <td>SIISPEN</td>
-                            <td>Cargos y Puestos</td>
-                        </tr>
-                        <tr>
-                            <td>10</td>
-                            <td>Vacantes del Servicio Profesional Electoral Nacional por cargo /puesto</td>
-                            <td>Plazas vacantes del Servicio Profesional Electoral Nacional clasificadas por cargo / puesto</td>
-                            <td>Cargos y Puestos</td>
-                            <td>Vacantes</td>
-                            <td>
-                                <span class="dataset-format">
-                                    <a href="" download>Excel</a>
-                                </span>
-                            </td>
-                            <td>31/05/2017</td>
-                            <td>Sin fecha fija</td>
-                            <td>Alejandro Alarcón Mares</td>
-                            <td>Subdirector de Incorporación y Registro</td>
-                            <td>alejandro.alarcon@ine.mx</td>
-                            <td>Elaboración propia a partir de la documentación recibida en oficialía de partes</td>
-                            <td>Cargos y Puestos</td>
-                        </tr>
-                        <tr>
-                            <td>11</td>
-                            <td>Vacantes del Servicio Profesional Electoral Nacional por Entidad</td>
-                            <td>Plazas vacantes del Servicio Profesional Electoral Nacional clasificadas por entidad y cargo / puesto</td>
-                            <td>Cargos y Puestos</td>
-                            <td>Vacantes</td>
-                            <td>
-                                <span class="dataset-format">
-                                    <a href="" download>Excel</a>
-                                </span>
-                            </td>
-                            <td>31/05/2017</td>
-                            <td>Sin fecha fija</td>
-                            <td>Alejandro Alarcón Mares</td>
-                            <td>Subdirector de Incorporación y Registro</td>
-                            <td>alejandro.alarcon@ine.mx</td>
-                            <td>Elaboración propia a partir de la documentación recibida en oficialía de partes</td>
-                            <td>Cargos y Puestos</td>
-                        </tr>
-                        <tr>
-                            <td>12</td>
-                            <td>Vacantes del Servicio Profesional Electoral Nacional por Dirección Ejecutiva</td>
-                            <td>Plazas vacantes del Servicio Profesional Electoral Nacional clasificadas por dirección Ejecutiva cargo / puesto</td>
-                            <td>Cargos y Puestos</td>
-                            <td>Vacantes</td>
-                            <td>
-                                <span class="dataset-format">
-                                    <a href="" download>Excel</a>
-                                </span>
-                            </td>
-                            <td>31/05/2017</td>
-                            <td>Sin fecha fija</td>
-                            <td>Alejandro Alarcón Mares</td>
-                            <td>Subdirector de Incorporación y Registro</td>
-                            <td>alejandro.alarcon@ine.mx</td>
-                            <td>Elaboración propia a partir de la documentación recibida en oficialía de partes</td>
-                            <td>Cargos y Puestos</td>
-                        </tr>
-                        <tr>
-                            <td>13&nbsp;<span class="glyphicon glyphicon-eye-open"></span></td>
-                            <td>Vacantes ocupadas por Comisiones de Trabajo</td>
-                            <td>Detalle de vacantes ocupadas por Comisiones de Trabajo</td>
-                            <td>Cargos y Puestos</td>
-                            <td>Vacantes</td>
-                            <td>
-                                <span class="dataset-format">
-                                    <a href="" download>xls</a>
-                                </span>
-                            </td>
-                            <td>31/05/2017</td>
-                            <td>Sin fecha fija</td>
-                            <td>José de Jesús Gutiérrez Archundia</td>
-                            <td>Subdirector de ocupaciones temporales e impugnaciones </td>
-                            <td>josejesus.gutierreza@ine.mx</td>
-                            <td>Diferentes Acuerdos de la Junta General</td>
-                            <td>Cargos y Puestos</td>
-                        </tr>
-                        <tr>
-                            <td>14&nbsp;<span class="glyphicon glyphicon-eye-open"></span></td>
-                            <td>Vacantes ocupadas por Encargadurias de Despacho</td>
-                            <td>Detalle de vacantes por Encargadurías de Despacho</td>
-                            <td>Cargos y Puestos</td>
-                            <td>Vacantes</td>
-                            <td>
-                                <span class="dataset-format">
-                                    <a href="" download>xls</a>
-                                </span>
-                            </td>
-                            <td>31/05/2017</td>
-                            <td>Sin fecha fija</td>
-                            <td>José de Jesús Gutiérrez Archundia</td>
-                            <td>Subdirector de ocupaciones temporales e impugnaciones </td>
-                            <td>josejesus.gutierreza@ine.mx</td>
-                            <td>Diferentes Acuerdos de la Junta General</td>
-                            <td>Cargos y Puestos</td>
-                        </tr>
-                        <tr>
-                            <td>15</td>
-                            <td>Vacantes ocupadas por Cambios de Adscripción 1999-2017</td>
-                            <td>Detalle de vacantes ocupadas por cambios de adscripción</td>
-                            <td>Cargos y Puestos</td>
-                            <td>Readscripción</td>
-                            <td>
-                                <span class="dataset-format">
-                                    <a href="" download>xls</a>
-                                </span>
-                            </td>
-                            <td>31/05/2017</td>
-                            <td>Sin fecha fija</td>
-                            <td>José de Jesús Gutiérrez Archundia</td>
-                            <td>Subdirector de ocupaciones temporales e impugnaciones </td>
-                            <td>josejesus.gutierreza@ine.mx</td>
-                            <td>Diferentes Acuerdos de la Junta General</td>
-                            <td>Cargos y Puestos</td>
-                        </tr>
-                        <tr>
-                            <td>16</td>
-                            <td>Vacantes ocupadas por Cambios de Adscripción por Entidad 2010-2017</td>
-                            <td>Detalle de vacantes ocupadas por cambios de adscripción por entidad</td>
-                            <td>Cargos y Puestos</td>
-                            <td>Readscripción</td>
-                            <td>
-                                <span class="dataset-format">
-                                    <a href="" download>xls</a>
-                                </span>
-                            </td>
-                            <td>31/05/2017</td>
-                            <td>Sin fecha fija</td>
-                            <td>José de Jesús Gutiérrez Archundia</td>
-                            <td>Subdirector de ocupaciones temporales e impugnaciones </td>
-                            <td>josejesus.gutierreza@ine.mx</td>
-                            <td>Diferentes Acuerdos de la Junta General</td>
-                            <td>Cargos y Puestos</td>
-                        </tr>
-                        <tr>
-                            <td>17</td>
-                            <td>Vacantes ocupadas por Cambios de Adscripción por cargo / puesto 2010-2017</td>
-                            <td>Detalle de vacantes ocupadas por cambios de adscripción por cargo / puesto</td>
-                            <td>Cargos y Puestos</td>
-                            <td>Readscripción</td>
-                            <td>
-                                <span class="dataset-format">
-                                    <a href="" download>xls</a>
-                                </span>
-                            </td>
-                            <td>31/05/2017</td>
-                            <td>Sin fecha fija</td>
-                            <td>José de Jesús Gutiérrez Archundia</td>
-                            <td>Subdirector de ocupaciones temporales e impugnaciones </td>
-                            <td>josejesus.gutierreza@ine.mx</td>
-                            <td>Diferentes Acuerdos de la Junta General</td>
-                            <td>Cargos y Puestos</td>
-                        </tr>
-                        <tr>
-                            <td>18</td>
-                            <td>Vacantes y ocupación de plazas SPEN-OPLE</td>
-                            <td>Detalle de las plazas ocupadas y vacantes en OPLE</td>
-                            <td>Cargos y Puestos</td>
-                            <td>Vacantes y plzas</td>
-                            <td>
-                                <span class="dataset-format">
-                                    <a href="" download>xls</a>
-                                </span>
-                            </td>
-                            <td>01/06/2017</td>
-                            <td>Sin fecha fija</td>
-                            <td>José de Jesús Gutiérrez Archundia</td>
-                            <td>Subdirector de ocupaciones temporales e impugnaciones </td>
-                            <td>josejesus.gutierreza@ine.mx</td>
-                            <td>Oficios generados por OPLE y Acuerdos de la Junta General</td>
-                            <td>Cargos y Puestos</td>
-                        </tr>
-                        <tr>
-                            <td>19</td>
-                            <td>Ocupación de plazas por género SPEN-OPLE</td>
-                            <td>Detalle de plazas por género en OPLE</td>
-                            <td>Cargos y Puestos</td>
-                            <td>Plazas</td>
-                            <td>
-                                <span class="dataset-format">
-                                    <a href="" download>XLS</a>
-                                </span>
-                            </td>
-                            <td>31/05/2017</td>
-                            <td>Sin fecha fija</td>
-                            <td>José de Jesús Gutiérrez Archundia</td>
-                            <td>Subdirector de ocupaciones temporales e impugnaciones </td>
-                            <td>josejesus.gutierreza@ine.mx</td>
-                            <td>Diversos Acuerdos de la Junta General</td>
-                            <td>Cargos y Puestos</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <!-- Narrativa 2 columnas -->
-            </div>
-            </section>
-            <section class="no-padding">
-                <div class="container">
-                    <div class="row m-t-40">
-                        <div class="col-md-6 m-b-30">
-                            <img class="img-responsive m-b-20" alt="Video sobre voto en el extranjero" src="images/video-test.png">
-                        </div>
-                        <div class="col-md-6" data-animation="fadeInUp" data-animation-delay="200">
-                            <div class="p-t-20">
-                                <h6 class="no-margin">Conoce el trámite para participar</h6>
-                                <h2 class="m-b-20">México está donde estás tú</h2>
-                                <p class="lead">Participa en las grandes decisiones políticas del país; aunque no vivas en México, sigues siendo ciudadano mexicano y aportas al fortalecimiento de la democracia, beneficiando a tus familiares y amigos que aún viven aquí.</p>
-
-                                <p>Si ya cuentas con tu credencial, <a href="credencial-vigencia.html">verifica la vigencia</a>. Recuerda que no todas las credenciales sirven para identificarte y votar.</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-            </section>
-            <!-- /Narrativa 2 columnas -->
-            <hr class="no-margin">
-
-            <!-- Narrativa 2 columnasr -->
-            <section>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6" data-animation="fadeInUp" data-animation-delay="400">
-                            <h6 class="no-margin">Conoce el proceso para obtener tu credencial</h6>
-                            <h2 class="m-b-20">Solicita tu credencial de elector desde el extranjero</h2>
-                            <p class="lead">El INE, a través de la red de Consulados y Embajadas de la Secretaría de Relaciones Exteriores (SRE), te permite solicitar la Credencial para Votar desde el país en donde residas. Debes preparar tus papeles de identificación y hacer una cita en linea.</p>
-                            <p><a href="credencial-proceso.html">Conoce los detalles del trámite y lo que necesitas para tramitarla</a></p>
-                        </div>
-
-                        <div class="col-md-6 m-b-30">
-                            <img class="img-responsive m-b-20" alt="Video sobre voto en el extranjero" src="images/video02-test.png">
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- /Narrativa 2 columnas -->
-
-            <hr class="no-margin">
-
-
-            <!-- Destacadas sección -->
-            <section class="no-padding">
-                <div class="container m-t-40">
-                    <h3 class="no-margin p-b-40">Información destacada</h3>
-                    <div class="row">
-
-                        <div class="col-md-4">
-                            <div class="card-item" data-animation="fadeInUp" data-animation-delay="0">
-                                <img alt="" src="images/cards/card-1.png">
-                                <div class="contenido">
-                                    <h4>Acceso principal a nota destacada sobre este tema</h4>
-                                    <p>Texto corto de descripción para informar sobre el contexto.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card-item" data-animation="fadeInUp" data-animation-delay="100">
-                                <img alt="" src="images/cards/card-2.png">
-                                <div class="contenido">
-                                    <h4>Acceso principal a nota destacada sobre este tema</h4>
-                                    <p>Texto corto de descripción para informar sobre el contexto.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card-item" data-animation="fadeInUp" data-animation-delay="200">
-                                <img alt="" src="images/cards/card-3.png">
-                                <div class="contenido">
-                                    <h4>Acceso principal a nota destacada sobre este tema</h4>
-                                    <p>Texto corto de descripción para informar sobre el contexto.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card-item" data-animation="fadeInUp" data-animation-delay="300">
-                                <img alt="" src="images/cards/card-4.png">
-                                <div class="contenido">
-                                    <h4>Acceso principal a nota destacada sobre este tema</h4>
-                                    <p>Texto corto de descripción para informar sobre el contexto.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card-item" data-animation="fadeInUp" data-animation-delay="400">
-                                <img alt="" src="images/cards/card-5.png">
-                                <div class="contenido">
-                                    <h4>Acceso principal a nota destacada sobre este tema</h4>
-                                    <p>Texto corto de descripción para informar sobre el contexto.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card-item" data-animation="fadeInUp" data-animation-delay="500">
-                                <img alt="" src="images/cards/card-6.png">
-                                <div class="contenido">
-                                    <h4>Acceso principal a nota destacada sobre este tema</h4>
-                                    <p>Texto corto de descripción para informar sobre el contexto.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- /Destacadas sección -->
-
-
-            <!-- FOOTER -->
-            <footer id="footer">
-                <section class=" background-grey no-margin no-padding">
-                    <div class="container">
-                        <div class="row">
-                            <div class="accordion clean m-t-20">
-                                <div class="ac-item">
-                                    <h4 class="ac-title tit-opinion">¿Todo bien con esta página? Nos gustaría saber tu opinión </h4>
-                                    <div class="ac-content " style="display: none;">
-
-                                        <div class="col-md-6">
-                                            <label class="upper" for="name">¿Te ha sido útil la información de la página?</label>
-                                            <p>
-                                                <input type="radio" name="1" value="si" id="" aria-label="Si" class="">
-                                                <span class="m-10">Sí</span>
-                                                <input type="radio" name="1" value="no" id="" aria-label="No">
-                                                <span class="m-10">No</span>
-                                            </p>
-                                            <label class="upper" for="name">Envíanos tus dudas, comentarios y/o sugerencias :</label>
-                                            <p>
-                                                <input type="radio" name="2" value="Correo para recibir respuesta" id="group_" aria-label="No" checked="">
-                                                <span class="m-10">Correo para recibir respuesta</span>
-                                                <input type="radio" name="2" value="Anónimo" id="" aria-label="Si">
-                                                <span class="m-10">Anónimo</span>
-                                            </p>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <p>
-                                                <label class="upper" for="name"> * Correo electrónico </label>
-                                                <input type="email" class="form-control required" name="senderName" placeholder="Tu correo electrónico" id="name" aria-required="true">
-                                            </p>
-
-                                            <p>
-                                                <label class="upper" for="comment">Envíanos tus comentarios</label>
-                                                <textarea class="form-control required" name="comment" rows="9" placeholder="Escribe tu comentario" id="comment" aria-required="true"></textarea>
-                                            </p>
-                                            <button type="submit" class="btn btn-primary" id="encuesta">Enviar</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <hr class="no-margin">
-                <section class="p-t-30 p-b-0 background-pie">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-4"><img src="images/blog/bg-footer.png"></div>
-                            <div class="col-sm-4">
-                                <div class="carousel portfolio-basic-image" data-carousel-col="1"> <img alt="image" src="images/blog/1.jpg"> <img alt="image" src="images/blog/2.jpg"> <img alt="image" src="images/blog/3.jpg"> </div>
-                            </div>
-                            <div class="col-sm-2">
-                                <h6 class="widget-title">Páginas Útiles</h6>
-                                <ul class="list no-padding listafooter">
-                                    <li> <a href="#">Contacto</a> </li>
-                                    <li> <a href="#">Datos personales</a> </li>
-                                    <li> <a href="#">Preguntas frecuentes</a> </li>
-                                    <li> <a href="#">Redes sociales</a> </li>
-                                    <li> <a href="#">Mapa del sitio</a> </li>
-                                    <li> <a href="#">Creative Commons</a> </li>
-                                    <li> <a href="#">Accesibilidad</a> </li>
-                                </ul>
-                            </div>
-                            <div class="col-sm-2">
-                                <h6 class="widget-title">Páginas Principales</h6>
-                                <ul class="list no-padding listafooter">
-                                    <li> <a href="#">Sobre INE</a> </li>
-                                    <li> <a href="#">Comunidad INE </a> </li>
-                                    <li> <a href="#">Credencial de Elector </a> </li>
-                                    <li> <a href="#">Voto y Elecciones </a> </li>
-                                    <li> <a href="#">Voto en el extranjero</a> </li>
-                                    <li> <a href="#">Transparencia</a> </li>
-                                    <li> <a href="#">Central Electoral</a> </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <hr class="no-margin">
-                <section class="no-margin no-padding">
-                    <div class="container">
-                        <div class="row text-center p-t-40 p-b-20">
-                            <div class="col-sm-4"> 01 800 433 2000
-                                <p>Desde cualquier parte del país sin costo</p>
-                            </div>
-                            <div class="col-sm-4"> 1 (866) 986 8306
-                                <p>Desde Estados Unidos sin costo</p>
-                            </div>
-                            <div class="col-sm-4"> +52 (55) 5481 9897
-                                <p>Desde otros países por cobrar</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <hr class="no-margin">
-            </footer>
-            <!-- END: FOOTER -->
+<!-- ENVOLVENTE -->
+<div class="wrapper"> 
+  <!-- accesos rápidos -->
+  <div id="topbar" class="">
+    <div class="container">
+      <div class="topbar-dropdown">
+        <div class="title"><i class="fa fa-external-link-square"></i>Ir a INE.MX</div>
+      </div>
+      <div class="topbar-dropdown">
+        <div class="title">Accesos rápidos <i class="fa fa-caret-down"></i></div>
+        <div class="dropdown-list"> <a class="list-entry" href="#">Obtener mi credencial</a> <a class="list-entry" href="#">Activar credencial</a> <a class="list-entry" href="#">Registrarme al padrón</a> <a class="list-entry" href="#">¿Cómo votar?</a> <a class="list-entry" href="#">Elecciones 2018</a> <a class="list-entry" href="#">Comisión del voto</a> </div>
+      </div>
+      <div class="hidden-xs">
+        <div class="social-icons social-icons-colored-hover">
+          <ul>
+            <li class="social-facebook"><a href="https://www.facebook.com/INEMexico/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li class="social-twitter"><a href="https://twitter.com/INEMexico" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li class="social-youtube"><a href="https://www.youtube.com/user/IFETV" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
+            <li class="social-linkedin"><a href="contacto.html"><i class="fa fa-envelope"></i></a></li>
+            <li class="social-rss"><a href="#"><i class="fa fa-rss"></i></a></li>
+          </ul>
         </div>
-        <!-- END: WRAPPER -->
-        <!-- GO TOP BUTTON -->
-        <a class="gototop gototop-button" href="#"><i class="fa fa-chevron-up"></i></a>
-        <!-- Funciones js -->
-        <script src="js/theme-functions.js"></script>
-        <!-- Custom js file -->
-        <script src="js/custom.js"></script>
-    </body>
+      </div>
+    </div>
+  </div>
+  <!-- /accesos rápidos --> 
+  
+  <!-- ENCABEZADO -->
+  <header id="header" class="">
+    <div id="header-wrap">
+      <div class="container"> 
+        
+        <!--LOGO-->
+        <div id="logo"> <a href="index.html" class="logo" data-dark-logo="images/logo-dark.png"> <img src="images/logo-sm.png" alt="Logo INE"> </a> </div>
+        <!--/LOGO--> 
+        
+        <!--MENU MOVIL -->
+        <div class="nav-main-menu-responsive">
+          <button class="lines-button x"> <span class="lines"></span> </button>
+        </div>
+        <!--/MENU MOVIL --> 
+        
+        <!--BUSCAR EN MENÚ -->
+        <div id="top-search"> <a id="top-search-trigger"><i class="fa fa-search"></i><i class="fa fa-close"></i></a>
+          <form action="search-results-page.html" method="get" data-toggle="validator">
+            <input type="text" name="q" id="q" class="form-control" value="" placeholder="Palabra clave + presiona  &quot;Enter&quot;" required>
+          </form>
+        </div>
+        <!--/BUSCAR EN MENÚ --> 
+        
+        <!--MENU PRINCIPAL-->
+        <div class="navbar-collapse collapse main-menu-collapse navigation-wrap">
+          <div class="container">
+            <nav id="mainMenu" class="main-menu mega-menu">
+              <ul class="main-menu nav nav-pills">
+                <li class="dropdown mega-menu-item"> <a href="#">Nosotros<i class="fa fa-angle-down"></i></a>
+                  <ul class="dropdown-menu">
+                    <li class="mega-menu-content" style="background-image: url('images/bg-menu.gif');">
+                      <div class="row">
+                        <div class="col-md-3">
+                          <ul>
+                            <li class="mega-menu-title">INE y el voto en el extranjero</li>
+                            <li> <a href="#">Información General</a> </li>
+                            <li> <a href="#">Marco Normativo</a> </li>
+                            <li> <a href="#">Reforma Electoral 2014</a> </li>
+                            <li> <a href="#">Sistema de Contacto</a> </li>
+                          </ul>
+                        </div>
+                        <div class="col-md-3">
+                          <ul>
+                            <li class="mega-menu-title">Comisión del Voto</li>
+                            <li> <a href="#">¿Qué es la Comisión?</a> </li>
+                            <li> <a href="#">Informes de la Comisión</a> </li>
+                            <li> <a href="#">Calendario de actividades</a> </li>
+                            <li> <a href="#">Contacto</a> </li>
+                          </ul>
+                        </div>
+                        <div class="col-md-6">
+                          <ul>
+                            <li class="mega-menu-title">Histórico</li>
+                          </ul>
+                          <div class="col-md-6">
+                            <ul>
+                              <li> <a href="#">Procesos electorales anteriores</a> </li>
+                              <li> <a href="#">Atlas de resultados</a> </li>
+                              <li> <a href="#">Evolución del voto en el extranjero</a> </li>
+                              <li> <a href="#">Agradecimientos</a> </li>
+                            </ul>
+                          </div>
+                          <div class="col-md-6">
+                            <ul>
+                              <li> &nbsp; </li>
+                              <li> &nbsp; </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown mega-menu-item"> <a href="credencial.html">Credencial de Elector<i class="fa fa-angle-down"></i></a>
+                  <ul class="dropdown-menu">
+                    <li class="mega-menu-content" style="background-image: url('images/bg-menu.gif');">
+                      <div class="row">
+                        <div class="col-md-3">
+                          <ul>
+                            <li class="mega-menu-title">Solicitud de Credencial</li>
+                            <li> <a href="#">Conoce el proceso</a> </li>
+                            <li> <a href="#">Prepara tus papeles</a> </li>
+                            <li> <a href="#">Programa una cita</a> </li>
+                            <li> <a href="#">Consulta el estatus</a> </li>
+                          </ul>
+                        </div>
+                        <div class="col-md-3">
+                          <ul>
+                            <li class="mega-menu-title">Activa tu credencial</li>
+                            <li> <a href="#">Conoce el proceso</a> </li>
+                            <li> <a href="#">Activa tu credencial</a> </li>
+                            <li> <a href="#">Preguntas Frecuentes</a> </li>
+                            <li> <a href="#">Llama a INETel</a> </li>
+                          </ul>
+                        </div>
+                        <div class="col-md-3">
+                          <ul>
+                            <li class="mega-menu-title">Regístrate a la lista</li>
+                            <li> <a href="#">Conoce el trámite</a> </li>
+                            <li> <a href="#">Regístrate en línea</a> </li>
+                            <li> <a href="#">Elecciones 2018</a> </li>
+                            <li> <a href="#">Preguntas Frecuentes</a> </li>
+                          </ul>
+                        </div>
+                        <div class="col-md-3">
+                          <ul>
+                            <li class="mega-menu-title">Vota desde el extranjero</li>
+                            <li> <a href="#">Conoce el trámite</a> </li>
+                            <li> <a href="#">¿Cómo se vota?</a> </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown mega-menu-item"> <a href="credencial.html">Voto y Elecciones<i class="fa fa-angle-down"></i></a>
+                  <ul class="dropdown-menu">
+                    <li class="mega-menu-content" style="background-image: url('images/bg-menu.gif');">
+                      <div class="row">
+                        <div class="col-md-3">
+                          <ul>
+                            <li class="mega-menu-title">Proceso uno</li>
+                            <li> <a href="#">Conoce el proceso</a> </li>
+                            <li> <a href="#">Acceso uno</a> </li>
+                            <li> <a href="#">Acceso dos</a> </li>
+                            <li> <a href="#">Acceso tres</a> </li>
+                          </ul>
+                        </div>
+                        <div class="col-md-3">
+                          <ul>
+                            <li class="mega-menu-title">Proceso dos</li>
+                            <li> <a href="#">Conoce el proceso</a> </li>
+                            <li> <a href="#">Acceso uno</a> </li>
+                            <li> <a href="#">Acceso dos</a> </li>
+                            <li> <a href="#">Acceso tres</a> </li>
+                          </ul>
+                        </div>
+                        <div class="col-md-6">
+                          <ul>
+                            <li class="mega-menu-title">Proceso tres</li>
+                          </ul>
+                          <div class="col-md-6">
+                            <ul>
+                              <li> <a href="#">Conoce el proceso</a> </li>
+                              <li> <a href="#">Acceso uno</a> </li>
+                              <li> <a href="#">Acceso dos</a> </li>
+                              <li> <a href="#">Acceso tres</a> </li>
+                            </ul>
+                          </div>
+                          <div class="col-md-6">
+                            <ul>
+                              <li> &nbsp; </li>
+                              <li> &nbsp; </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="#">Promueve el voto</a></li>
+                <li><a href="#">Noticias</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!--/MENU PRINCIPAL--> 
+      </div>
+    </div>
+  </header>
+  <!-- /NCABEZADO --> 
+  
+  <!-- ENCABEZADO BUSQUEDA -->
+  <section class="no-margin p-t-50 p-b-50" style="background-image:url(images/ine-credencial-elector.jpg)">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5 col-sm-12">
+          <h2 class="m-b-20 m-t-50 text-light">Datos Abiertos</h2>
+          <p class="text-light">Aquí encontrarás datos de diversa índole, generados por el INE en formatos abiertos, a través de este sitio, bajo términos de libre uso que permiten a cualquier persona o máquina accederlos, combinarlos, usarlos y distribuirlos. </p>
+        </div>
+        <div class="col-md-6 col-md-offset-1 m-t-40"> &nbsp; </div>
+      </div>
+    </div>
+  </section>
+  <!-- /ENCABEZADO BUSQUEDA --> 
+  
+  <!-- ACCESIBILIDAD -->
+  <section class="background-grey no-margin no-padding">
+    <div class="container">
+      <div class="row p-t-10 p-b-10 indice-seccion">
+        <div class="col-xs-6 col-sm-8">
+          <div class="fa-hover p-t-5 p-b-5"><i class="fa fa-map-pin"></i> Tema: <a href="credencial.html">Datos Abiertos</a></div>
+        </div>
+        <div class="col-xs-6 col-sm-4"> </div>
+      </div>
+    </div>
+  </section>
+  <hr class="no-margin">
+  <section class="no-margin no-padding" style="background-color:#eeeeee;">
+    <div class="container center"> 
+      
+      <!-- /ACCESIBILIDAD -->
+      <div class="jumbotron vertical-center">
+        <h3 class="sm-text-center m-t-20 m-b-20">Metadatos de los archivos publicados en el portal institucional ine</h3>
+        <table id="tabla-datos-abiertos" class="table table-striped table-bordered" cellspacing="0">
+          <thead>
+            <tr>
+              <th>Id</th>
+              <th>Título</th>
+              <th>Contenido</th>
+              <th>Categoría</th>
+              <th>Palabras Clave</th>
+              <th>Formato</th>
+              <th>Última Actualización</th>
+              <th>Frecuencia Actualización</th>
+              <th>Nombre Responsable</th>
+              <th>Cargo</th>
+              <th>Correo-e</th>
+              <th>FUENTE</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tfoot>
+            <tr>
+              <th>Id</th>
+              <th>Título</th>
+              <th>Contenido</th>
+              <th>Categoría</th>
+              <th>Palabras Clave</th>
+              <th>Formato</th>
+              <th>Última Actualización</th>
+              <th>Frecuencia Actualización</th>
+              <th>Nombre Responsable</th>
+              <th>Cargo</th>
+              <th>Correo-e</th>
+              <th>FUENTE</th>
+              <th></th>
+            </tr>
+          </tfoot>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Inventario de Cargos y Puestos</td>
+              <td>Detalle de los Cargos y Puestos del Servicio Profesional Electoral Nacional</td>
+              <td>Cargos y Puestos</td>
+              <td>Catálogo</td>
+              <td><a href="" download style="text-decoration: none;"> <i class="fa fa-download" aria-hidden="true"></i> xls</a></td>
+              <td>30/08/2016</td>
+              <td>Sin fecha fija</td>
+              <td>Ricardo Urban</td>
+              <td>Subdirector de Planeación y Evaluación SPEN</td>
+              <td>ricardo.urban@ine.mx</td>
+              <td>Consejo General del INE (fecha)</td>
+              <td>Cargos y Puestos</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Estructura de plazas del Servicio Profesional Electoral Nacional INE</td>
+              <td>Detalle de las plazas del sistema INE-SPEN</td>
+              <td>Cargos y Puestos</td>
+              <td>Plazas</td>
+              <td><a href="" download style="text-decoration: none;"> <i class="fa fa-download" aria-hidden="true"></i> xls</a></td>
+              <td></td>
+              <td>Sin fecha fija</td>
+              <td>Ricardo Urbán</td>
+              <td>Subdirector de Planeación y Evaluación SPEN</td>
+              <td>ricardo.urban@ine.mx</td>
+              <td>Consejo General del INE (fecha)</td>
+              <td>Cargos y Puestos</td>
+            </tr>
+            <tr>
+              <td>3&nbsp;<span class="glyphicon glyphicon-eye-open"></span></td>
+              <td>Plazas por función directiva o técnica</td>
+              <td>Cantidad de plazas por función directiva o técnica</td>
+              <td>Cargos y Puestos</td>
+              <td>Plazas</td>
+              <td><a href="" download style="text-decoration: none;"> <i class="fa fa-download" aria-hidden="true"></i> xls</a></td>
+              <td>30/05/2017</td>
+              <td>Sin fecha fija</td>
+              <td>Ricardo Urbán</td>
+              <td>Subdirector de Planeación y Evaluación SPEN</td>
+              <td>ricardo.urban@ine.mx</td>
+              <td>Consejo General del INE (fecha)</td>
+              <td>Cargos y Puestos</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Estructura ocupacional  de plazas Servicio Profesional Electoral Nacional OPLE</td>
+              <td>Detalle de las plazas SPEN</td>
+              <td>Cargos y Puestos</td>
+              <td>Plazas</td>
+              <td><a href="" download style="text-decoration: none;"> <i class="fa fa-download" aria-hidden="true"></i> xls</a></td>
+              <td>16/06/2017</td>
+              <td>Mensual</td>
+              <td>Ricardo Urbán</td>
+              <td>Subdirector de Planeación y Evaluación SPEN</td>
+              <td>ricardo.urban@ine.mx</td>
+              <td>Elaoración propia con base en la Junta General (fecha)</td>
+              <td>Cargos y Puestos</td>
+            </tr>
+            <tr>
+              <td>5&nbsp;<span class="glyphicon glyphicon-eye-open"></span></td>
+              <td>Ocupación de plazas SPEN</td>
+              <td>Detalle ocupación de plazas SPEN</td>
+              <td>Cargos y Puestos</td>
+              <td>Plazas</td>
+              <td><a href="" download style="text-decoration: none;"> <i class="fa fa-download" aria-hidden="true"></i> Excel</a></td>
+              <td>31/05/2017</td>
+              <td>Sin fecha fija</td>
+              <td>Alejandro Alarcón Mares</td>
+              <td>Subdirector de Incorporación y Registro</td>
+              <td>alejandro.alarcon@ine.mx</td>
+              <td>Elaboración propia con base en diversos acuerdos de Junta General </td>
+              <td>Cargos y Puestos</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Nivel máximo de estudios de los miebros del SPEN-INE</td>
+              <td>Detalle nivel máximo de estudios</td>
+              <td>Cargos y Puestos</td>
+              <td>Plazas</td>
+              <td><a href="" download style="text-decoration: none;"> <i class="fa fa-download" aria-hidden="true"></i> Excel</a></td>
+              <td>31/05/2017</td>
+              <td>Sin fecha fija</td>
+              <td>Alejandro Alarcón Mares</td>
+              <td>Subdirector de Incorporación y Registro</td>
+              <td>alejandro.alarcon@ine.mx</td>
+              <td>Documentación entregada por MSPEN</td>
+              <td>Cargos y Puestos</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Miembros del SPEN clasificados por género</td>
+              <td>Detalle de los MSPEN por género</td>
+              <td>Cargos y Puestos</td>
+              <td>Plazas</td>
+              <td><a href="" download style="text-decoration: none;"> <i class="fa fa-download" aria-hidden="true"></i> Excel</a></td>
+              <td>31/05/2017</td>
+              <td>Sin fecha fija</td>
+              <td>Alejandro Alarcón Mares</td>
+              <td>Subdirector de Incorporación y Registro</td>
+              <td>alejandro.alarcon@ine.mx</td>
+              <td>Documentación entregada por MSPEN</td>
+              <td>Cargos y Puestos</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>Miembros del SPEN clasificados por edad</td>
+              <td>Detalle de los MSPEN por edad</td>
+              <td>Cargos y Puestos</td>
+              <td>Plazas</td>
+              <td><a href="" download style="text-decoration: none;"> <i class="fa fa-download" aria-hidden="true"></i> Excel</a></td>
+              <td>31/05/2017</td>
+              <td>Sin fecha fija</td>
+              <td>Alejandro Alarcón Mares</td>
+              <td>Subdirector de Incorporación y Registro</td>
+              <td>alejandro.alarcon@ine.mx</td>
+              <td>Documentación entregada por MSPEN</td>
+              <td>Cargos y Puestos</td>
+            </tr>
+            <tr>
+              <td>9&nbsp;<span class="glyphicon glyphicon-eye-open"></span></td>
+              <td>Antigüedad en el Servicio Profesional Electoral Nacional</td>
+              <td>Detalle de antigüedad del SPEN</td>
+              <td>Cargos y Puestos</td>
+              <td>Plazas</td>
+              <td><a href="" download style="text-decoration: none;"> <i class="fa fa-download" aria-hidden="true"></i> Excel</a></td>
+              <td>31/05/2017</td>
+              <td>Sin fecha fija</td>
+              <td>Alejandro Alarcón Mares</td>
+              <td>Subdirector de Incorporación y Registro</td>
+              <td>alejandro.alarcon@ine.mx</td>
+              <td>SIISPEN</td>
+              <td>Cargos y Puestos</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>Vacantes del Servicio Profesional Electoral Nacional por cargo /puesto</td>
+              <td>Plazas vacantes del Servicio Profesional Electoral Nacional clasificadas por cargo / puesto</td>
+              <td>Cargos y Puestos</td>
+              <td>Vacantes</td>
+              <td><a href="" download style="text-decoration: none;"> <i class="fa fa-download" aria-hidden="true"></i> Excel</a></td>
+              <td>31/05/2017</td>
+              <td>Sin fecha fija</td>
+              <td>Alejandro Alarcón Mares</td>
+              <td>Subdirector de Incorporación y Registro</td>
+              <td>alejandro.alarcon@ine.mx</td>
+              <td>Elaboración propia a partir de la documentación recibida en oficialía de partes</td>
+              <td>Cargos y Puestos</td>
+            </tr>
+            <tr>
+              <td>11</td>
+              <td>Vacantes del Servicio Profesional Electoral Nacional por Entidad</td>
+              <td>Plazas vacantes del Servicio Profesional Electoral Nacional clasificadas por entidad y cargo / puesto</td>
+              <td>Cargos y Puestos</td>
+              <td>Vacantes</td>
+              <td><a href="" download style="text-decoration: none;"> <i class="fa fa-download" aria-hidden="true"></i> Excel</a></td>
+              <td>31/05/2017</td>
+              <td>Sin fecha fija</td>
+              <td>Alejandro Alarcón Mares</td>
+              <td>Subdirector de Incorporación y Registro</td>
+              <td>alejandro.alarcon@ine.mx</td>
+              <td>Elaboración propia a partir de la documentación recibida en oficialía de partes</td>
+              <td>Cargos y Puestos</td>
+            </tr>
+            <tr>
+              <td>12</td>
+              <td>Vacantes del Servicio Profesional Electoral Nacional por Dirección Ejecutiva</td>
+              <td>Plazas vacantes del Servicio Profesional Electoral Nacional clasificadas por dirección Ejecutiva cargo / puesto</td>
+              <td>Cargos y Puestos</td>
+              <td>Vacantes</td>
+              <td><a href="" download style="text-decoration: none;"> <i class="fa fa-download" aria-hidden="true"></i> Excel</a></td>
+              <td>31/05/2017</td>
+              <td>Sin fecha fija</td>
+              <td>Alejandro Alarcón Mares</td>
+              <td>Subdirector de Incorporación y Registro</td>
+              <td>alejandro.alarcon@ine.mx</td>
+              <td>Elaboración propia a partir de la documentación recibida en oficialía de partes</td>
+              <td>Cargos y Puestos</td>
+            </tr>
+            <tr>
+              <td>13&nbsp;<span class="glyphicon glyphicon-eye-open"></span></td>
+              <td>Vacantes ocupadas por Comisiones de Trabajo</td>
+              <td>Detalle de vacantes ocupadas por Comisiones de Trabajo</td>
+              <td>Cargos y Puestos</td>
+              <td>Vacantes</td>
+              <td><a href="" download style="text-decoration: none;"> <i class="fa fa-download" aria-hidden="true"></i> xls</a></td>
+              <td>31/05/2017</td>
+              <td>Sin fecha fija</td>
+              <td>José de Jesús Gutiérrez Archundia</td>
+              <td>Subdirector de ocupaciones temporales e impugnaciones </td>
+              <td>josejesus.gutierreza@ine.mx</td>
+              <td>Diferentes Acuerdos de la Junta General</td>
+              <td>Cargos y Puestos</td>
+            </tr>
+            <tr>
+              <td>14&nbsp;<span class="glyphicon glyphicon-eye-open"></span></td>
+              <td>Vacantes ocupadas por Encargadurias de Despacho</td>
+              <td>Detalle de vacantes por Encargadurías de Despacho</td>
+              <td>Cargos y Puestos</td>
+              <td>Vacantes</td>
+              <td><a href="" download style="text-decoration: none;"> <i class="fa fa-download" aria-hidden="true"></i> xls</a></td>
+              <td>31/05/2017</td>
+              <td>Sin fecha fija</td>
+              <td>José de Jesús Gutiérrez Archundia</td>
+              <td>Subdirector de ocupaciones temporales e impugnaciones </td>
+              <td>josejesus.gutierreza@ine.mx</td>
+              <td>Diferentes Acuerdos de la Junta General</td>
+              <td>Cargos y Puestos</td>
+            </tr>
+            <tr>
+              <td>15</td>
+              <td>Vacantes ocupadas por Cambios de Adscripción 1999-2017</td>
+              <td>Detalle de vacantes ocupadas por cambios de adscripción</td>
+              <td>Cargos y Puestos</td>
+              <td>Readscripción</td>
+              <td><a href="" download style="text-decoration: none;"> <i class="fa fa-download" aria-hidden="true"></i> xls</a></td>
+              <td>31/05/2017</td>
+              <td>Sin fecha fija</td>
+              <td>José de Jesús Gutiérrez Archundia</td>
+              <td>Subdirector de ocupaciones temporales e impugnaciones </td>
+              <td>josejesus.gutierreza@ine.mx</td>
+              <td>Diferentes Acuerdos de la Junta General</td>
+              <td>Cargos y Puestos</td>
+            </tr>
+            <tr>
+              <td>16</td>
+              <td>Vacantes ocupadas por Cambios de Adscripción por Entidad 2010-2017</td>
+              <td>Detalle de vacantes ocupadas por cambios de adscripción por entidad</td>
+              <td>Cargos y Puestos</td>
+              <td>Readscripción</td>
+              <td><a href="" download style="text-decoration: none;"> <i class="fa fa-download" aria-hidden="true"></i> xls</a></td>
+              <td>31/05/2017</td>
+              <td>Sin fecha fija</td>
+              <td>José de Jesús Gutiérrez Archundia</td>
+              <td>Subdirector de ocupaciones temporales e impugnaciones </td>
+              <td>josejesus.gutierreza@ine.mx</td>
+              <td>Diferentes Acuerdos de la Junta General</td>
+              <td>Cargos y Puestos</td>
+            </tr>
+            <tr>
+              <td>17</td>
+              <td>Vacantes ocupadas por Cambios de Adscripción por cargo / puesto 2010-2017</td>
+              <td>Detalle de vacantes ocupadas por cambios de adscripción por cargo / puesto</td>
+              <td>Cargos y Puestos</td>
+              <td>Readscripción</td>
+              <td><a href="" download style="text-decoration: none;"> <i class="fa fa-download" aria-hidden="true"></i> xls</a></td>
+              <td>31/05/2017</td>
+              <td>Sin fecha fija</td>
+              <td>José de Jesús Gutiérrez Archundia</td>
+              <td>Subdirector de ocupaciones temporales e impugnaciones </td>
+              <td>josejesus.gutierreza@ine.mx</td>
+              <td>Diferentes Acuerdos de la Junta General</td>
+              <td>Cargos y Puestos</td>
+            </tr>
+            <tr>
+              <td>18</td>
+              <td>Vacantes y ocupación de plazas SPEN-OPLE</td>
+              <td>Detalle de las plazas ocupadas y vacantes en OPLE</td>
+              <td>Cargos y Puestos</td>
+              <td>Vacantes y plzas</td>
+              <td><a href="" download style="text-decoration: none;"> <i class="fa fa-download" aria-hidden="true"></i> xls</a></td>
+              <td>01/06/2017</td>
+              <td>Sin fecha fija</td>
+              <td>José de Jesús Gutiérrez Archundia</td>
+              <td>Subdirector de ocupaciones temporales e impugnaciones </td>
+              <td>josejesus.gutierreza@ine.mx</td>
+              <td>Oficios generados por OPLE y Acuerdos de la Junta General</td>
+              <td>Cargos y Puestos</td>
+            </tr>
+            <tr>
+              <td>19</td>
+              <td>Ocupación de plazas por género SPEN-OPLE</td>
+              <td>Detalle de plazas por género en OPLE</td>
+              <td>Cargos y Puestos</td>
+              <td>Plazas</td>
+              <td><a href="" download style="text-decoration: none;"> <i class="fa fa-download" aria-hidden="true"></i> xls</a></td>
+              <td>31/05/2017</td>
+              <td>Sin fecha fija</td>
+              <td>José de Jesús Gutiérrez Archundia</td>
+              <td>Subdirector de ocupaciones temporales e impugnaciones </td>
+              <td>josejesus.gutierreza@ine.mx</td>
+              <td>Diversos Acuerdos de la Junta General</td>
+              <td>Cargos y Puestos</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+  <!-- FOOTER -->
+  <footer id="footer">
+    <section class=" background-grey no-margin no-padding">
+      <div class="container">
+        <div class="row">
+          <div class="accordion clean m-t-20">
+            <div class="ac-item">
+              <h4 class="ac-title tit-opinion">¿Todo bien con esta página? Nos gustaría saber tu opinión </h4>
+              <div class="ac-content " style="display: none;">
+                <div class="col-md-6">
+                  <label class="upper" for="name">¿Te ha sido útil la información de la página?</label>
+                  <p>
+                    <input type="radio" name="1" value="si" id="" aria-label="Si" class="">
+                    <span class="m-10">Sí</span>
+                    <input type="radio" name="1" value="no" id="" aria-label="No">
+                    <span class="m-10">No</span> </p>
+                  <label class="upper" for="name">Envíanos tus dudas, comentarios y/o sugerencias :</label>
+                  <p>
+                    <input type="radio" name="2" value="Correo para recibir respuesta" id="group_" aria-label="No" checked="">
+                    <span class="m-10">Correo para recibir respuesta</span>
+                    <input type="radio" name="2" value="Anónimo" id="" aria-label="Si">
+                    <span class="m-10">Anónimo</span> </p>
+                </div>
+                <div class="col-md-6">
+                  <p>
+                    <label class="upper" for="name"> * Correo electrónico </label>
+                    <input type="email" class="form-control required" name="senderName" placeholder="Tu correo electrónico" id="name" aria-required="true">
+                  </p>
+                  <p>
+                    <label class="upper" for="comment">Envíanos tus comentarios</label>
+                    <textarea class="form-control required" name="comment" rows="9" placeholder="Escribe tu comentario" id="comment" aria-required="true"></textarea>
+                  </p>
+                  <button type="submit" class="btn btn-primary" id="encuesta">Enviar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="no-margin">
+    <section class="p-t-30 p-b-0 background-pie">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4"><img src="images/blog/bg-footer.png"></div>
+          <div class="col-sm-4">
+            <div class="carousel portfolio-basic-image" data-carousel-col="1"> <img alt="image" src="images/blog/1.jpg"> <img alt="image" src="images/blog/2.jpg"> <img alt="image" src="images/blog/3.jpg"> </div>
+          </div>
+          <div class="col-sm-2">
+            <h6 class="widget-title">Páginas Útiles</h6>
+            <ul class="list no-padding listafooter">
+              <li> <a href="#">Contacto</a> </li>
+              <li> <a href="#">Datos personales</a> </li>
+              <li> <a href="#">Preguntas frecuentes</a> </li>
+              <li> <a href="#">Redes sociales</a> </li>
+              <li> <a href="#">Mapa del sitio</a> </li>
+              <li> <a href="#">Creative Commons</a> </li>
+              <li> <a href="#">Accesibilidad</a> </li>
+            </ul>
+          </div>
+          <div class="col-sm-2">
+            <h6 class="widget-title">Páginas Principales</h6>
+            <ul class="list no-padding listafooter">
+              <li> <a href="#">Sobre INE</a> </li>
+              <li> <a href="#">Comunidad INE </a> </li>
+              <li> <a href="#">Credencial de Elector </a> </li>
+              <li> <a href="#">Voto y Elecciones </a> </li>
+              <li> <a href="#">Voto en el extranjero</a> </li>
+              <li> <a href="#">Transparencia</a> </li>
+              <li> <a href="#">Central Electoral</a> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="no-margin">
+    <section class="no-margin no-padding">
+      <div class="container">
+        <div class="row text-center p-t-40 p-b-20">
+          <div class="col-sm-4"> 01 800 433 2000
+            <p>Desde cualquier parte del país sin costo</p>
+          </div>
+          <div class="col-sm-4"> 1 (866) 986 8306
+            <p>Desde Estados Unidos sin costo</p>
+          </div>
+          <div class="col-sm-4"> +52 (55) 5481 9897
+            <p>Desde otros países por cobrar</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="no-margin">
+  </footer>
+  <!-- END: FOOTER --> 
+</div>
+<!-- END: WRAPPER --> 
+<!-- GO TOP BUTTON --> 
+<a class="gototop gototop-button" href="#"><i class="fa fa-chevron-up"></i></a> 
+<!-- Funciones js --> 
+<script src="js/theme-functions.js"></script> 
+<!-- Custom js file --> 
+<script src="js/custom.js"></script>
+</body>
 </html>
