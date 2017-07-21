@@ -42,7 +42,7 @@ var responsiveHelper = undefined;
             "scrollCollapse": true,
             "oLanguage": {
                 "sLengthMenu": "_MENU_ ",
-                "sInfo": "Showing <b>_START_ to _END_</b> of _TOTAL_ entries"
+                "sInfo": "Mostrando <b>_START_ a _END_</b> de _TOTAL_ entradas"
             },
             "iDisplayLength": 5
         };
@@ -66,7 +66,7 @@ var responsiveHelper = undefined;
             "scrollCollapse": true,
             "oLanguage": {
                 "sLengthMenu": "_MENU_ ",
-                "sInfo": "Showing <b>_START_ to _END_</b> of _TOTAL_ entries"
+                "sInfo": "Mostrando <b>_START_ a _END_</b> de _TOTAL_ entradas"
             },
             "iDisplayLength": 5
         };
@@ -101,7 +101,7 @@ var responsiveHelper = undefined;
             "scrollCollapse": true,
             "oLanguage": {
                 "sLengthMenu": "_MENU_ ",
-                "sInfo": "Showing <b>_START_ to _END_</b> of _TOTAL_ entries"
+                "sInfo": "Mostrando <b>_START_ a _END_</b> de _TOTAL_ entradas"
             },
             "iDisplayLength": 5,
             "oTableTools": {
