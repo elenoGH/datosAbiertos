@@ -3146,11 +3146,11 @@ hr.dotted {
 /* For Windows : Fixes 
 ------------------------------------
 */
-.windows body,
+/*.windows body,
 .windows p {
   font-size: 13px;
   letter-spacing: normal;
-}
+}*/
 .windows h1 {
   font-size: 33px;
   line-height: 49px;
