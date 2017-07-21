@@ -44,7 +44,7 @@ var responsiveHelper = undefined;
                 "sLengthMenu": "_MENU_ ",
                 "sInfo": "Mostrando <b>_START_ a _END_</b> de _TOTAL_ entradas"
             },
-            "iDisplayLength": 5
+            "iDisplayLength": 10
         };
 
         table.dataTable(settings);
@@ -68,7 +68,7 @@ var responsiveHelper = undefined;
                 "sLengthMenu": "_MENU_ ",
                 "sInfo": "Mostrando <b>_START_ a _END_</b> de _TOTAL_ entradas"
             },
-            "iDisplayLength": 5
+            "iDisplayLength": 10
         };
 
 
@@ -103,7 +103,7 @@ var responsiveHelper = undefined;
                 "sLengthMenu": "_MENU_ ",
                 "sInfo": "Mostrando <b>_START_ a _END_</b> de _TOTAL_ entradas"
             },
-            "iDisplayLength": 5,
+            "iDisplayLength": 10,
             "oTableTools": {
                 "sSwfPath": "assets/plugins/jquery-datatable/extensions/TableTools/swf/copy_csv_xls_pdf.swf",
                 "aButtons": [{
